@@ -1,4 +1,4 @@
 # PagingGalleryPicker
 
 
-android + kotlin + MVVM + databinding + hilt + navigation + paging3 + viewpager2 + scoped storage
+android + kotlin + MVVM + databinding + startup + hilt + navigation + paging3 + viewpager2 + glide + scoped storage...
