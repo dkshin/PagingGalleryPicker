@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar -->
+    <style name="Widget.App.Toolbar" parent="@style/Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="android:contentInsetLeft">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="colorOnPrimary">@color/purple_200</item>
+        <item name="android:elevation">2dp</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Theme" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorOnPrimary">@color/purple_500</item>
+        <item name="elevation">2dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+</resources>

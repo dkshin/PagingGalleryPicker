@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="kr.dksin.paginggallerypicker.ui.home.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/actionHomeToGallery"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="kr.dksin.paginggallerypicker.ui.gallery.GalleryFragment"
+        android:label="Gallery Fragment"
+        tools:layout="@layout/fragment_gallery">
+
+        <action
+            android:id="@+id/actionGalleryToResult"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@+id/galleryFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="kr.dksin.paginggallerypicker.ui.result.ResultFragment"
+        android:label="Result Fragment"
+        tools:layout="@layout/fragment_result">
+
+        <argument
+            android:name="galleryDatas"
+            app:argType="kr.dksin.paginggallerypicker.domain.model.GalleryData[]" />
+    </fragment>
+
+</navigation>
